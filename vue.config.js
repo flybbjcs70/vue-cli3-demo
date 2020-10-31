@@ -7,6 +7,9 @@ module.exports = {
   css: {
     extract: false
   },
+  devServer:{
+    disableHostCheck: true
+  },
   chainWebpack: config => {
     config.resolve.alias
       .set("@", resolve("src"))
